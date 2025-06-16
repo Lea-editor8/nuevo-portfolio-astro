@@ -2,25 +2,29 @@
 // Define the array of projects directly in the frontmatter script.
 const otherprojects = [
   {
-    "url": "https://www.lexingtonthemes.com/",
-    "title": "Lexington Themes",
-    "description": "Premium themes and UI Kits For designers, developers, businesses, and personal use — Beautifully crafted with Astro.js, and Tailwind CSS — Simple & easy to customize."
+    url: "https://www.lexingtonthemes.com/",
+    title: "Lexington Themes",
+    description:
+      "Premium themes and UI Kits For designers, developers, businesses, and personal use — Beautifully crafted with Astro.js, and Tailwind CSS — Simple & easy to customize.",
   },
   {
-    "url": "https://www.oxbowui.com/",
-    "title": "Oxbow UI",
-    "description": "Free and premium components, elements and layouts Beautifully crafted with Tailwind CSS — Simple & easy to customise."
+    url: "https://www.oxbowui.com/",
+    title: "Oxbow UI",
+    description:
+      "Free and premium components, elements and layouts Beautifully crafted with Tailwind CSS — Simple & easy to customise.",
   },
   {
-    "url": "https://www.colorsandfonts.com/",
-    "title": "Colors & Fonts",
-    "description": "Color and typography resources and inspiration for Web Developers and Digital Designers."
+    url: "https://www.colorsandfonts.com/",
+    title: "Colors & Fonts",
+    description:
+      "Color and typography resources and inspiration for Web Developers and Digital Designers.",
   },
   {
-    "url": "https://www.svgdoodles.com/",
-    "title": "SVG Doodles",
-    "description": "A free collection of 208 super duper SVG doodles for your creative projects."
-  }
+    url: "https://www.svgdoodles.com/",
+    title: "SVG Doodles",
+    description:
+      "A free collection of 208 super duper SVG doodles for your creative projects.",
+  },
   // Add more projects as needed...
 ];
 
@@ -51,7 +55,7 @@ function calculateAosDuration(index) {
     </div>
 
     <ul
-      class="mx-auto grid grid-cols-1  sm:grid-cols-2 text-secondary lg:grid-cols-4 items-start gap-6 mt-32"
+      class="mx-auto grid grid-cols-1 sm:grid-cols-2 text-secondary lg:grid-cols-4 items-start gap-6 mt-32"
       role="list"
     >
       {
@@ -68,11 +72,8 @@ function calculateAosDuration(index) {
                     0{index + 1}.
                   </p>
                   <p class="italic shrink-0">{project.title}</p>
-                  <p class="text-3xl  mt-3 leading-6 indent-9">
-                    {project.description}
-                  </p>
+                  <p class="text-xl  mt-3 indent-9">{project.description}</p>
                 </div>
-                
               </div>
             </a>
           </li>
